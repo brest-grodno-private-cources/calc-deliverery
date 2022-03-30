@@ -44,4 +44,7 @@ public class Main {
 
         }
     }
+    private class Proverka {
+
+    }
 }
