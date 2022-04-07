@@ -34,8 +34,11 @@ public class Main {
             km = sc.next();
             System.out.println("distance = " + km + " km");
 
-            double result = Double.valueOf(pricePerKg) * Double.valueOf(kg) + Double.valueOf(pricePerKm) * Double.valueOf(km);
-            System.out.println("priceCalc = " + result + " USD");
+            Calculator calc;
+                calc = new CalculatorImpl();
+
+            System.out.println("Result = " + calc.handle(Double.valueOf(pricePerKg), Double.valueOf(pricePerKm),
+                    Double.valueOf(kg), Double.valueOf(km)));
 
             System.out.println();
             System.out.println("To stop working press 'n' else - any key");
@@ -44,7 +47,5 @@ public class Main {
 
         }
     }
-    private class Proverka {
 
-    }
 }
